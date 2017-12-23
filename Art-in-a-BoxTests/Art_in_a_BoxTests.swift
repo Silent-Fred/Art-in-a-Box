@@ -81,7 +81,7 @@ class Art_in_a_BoxTests: XCTestCase {
         let boxes = artwork.scaledTo(aspectSize: 2000)
         XCTAssertEqual(0, boxes.count)
     }
-
+    
     func testBasicMondrian() {
         let artwork = Mondrian()
         let box = artwork.backgroundBox()
@@ -92,7 +92,7 @@ class Art_in_a_BoxTests: XCTestCase {
         let boxesAfterVerticalSplit = artwork.splitBetweenPoints(boxes: [box], point1: Point(x: 1, y: 1), point2: Point(x: 1, y: 2))
         XCTAssertEqual(2, boxesAfterVerticalSplit.count)
     }
-
+    
     func testDetailedMondrian() {
         let artwork = Mondrian()
         let box = artwork.backgroundBox()

@@ -126,4 +126,3 @@ class MondrianOnCanvas {
                          lineWidth: lineWidth)
     }
 }
-
