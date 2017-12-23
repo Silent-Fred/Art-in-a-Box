@@ -105,7 +105,7 @@ class MondrianOnCanvas {
                          toY: bareBox.bottomRight.y,
                          lineWidth: lineWidth)
     }
-    
+
     private func bottomLine(box: ColouredBox, lineWidth: Int) -> UIBezierPath? {
         let bareBox = box.box
         guard bareBox.bottomLeft.y < canvasSize - 1 else { return nil }
