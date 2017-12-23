@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBAction func refreshImage(_ sender: UIBarButtonItem) {
         let creativeIdea = Mondrian()
         creativeIdea.randomArtwork()
+        // images are supposed to possibly serve as background images
         let canvasSize = max(mondrianImageView.frame.width, mondrianImageView.frame.height)
         let art = MondrianOnCanvas(mondrian: creativeIdea, canvasSize: Int(canvasSize))
         mondrianImageView.image = art.asImage()

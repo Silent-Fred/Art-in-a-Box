@@ -81,6 +81,8 @@ class MondrianOnCanvas {
         line.move(to: CGPoint(x: fromX, y: fromY))
         line.addLine(to: CGPoint(x: toX, y: toY))
         line.lineWidth = CGFloat(lineWidth)
+        // despite the .square line ending, coordinates should be +/- 1 at the line ends
+        // to avoid a possible tiny empty spot in the middle of line intersections
         line.lineCapStyle = CGLineCap.square
         line.close()
         return line
@@ -89,9 +91,9 @@ class MondrianOnCanvas {
     private func topLine(box: ColouredBox, lineWidth: Int) -> UIBezierPath? {
         let bareBox = box.box
         guard bareBox.topLeft.y > 0 else { return nil }
-        return basicLine(fromX: bareBox.topLeft.x,
+        return basicLine(fromX: bareBox.topLeft.x - 1,
                          fromY: bareBox.topLeft.y,
-                         toX: bareBox.topRight.x,
+                         toX: bareBox.topRight.x + 1,
                          toY: bareBox.topRight.y,
                          lineWidth: lineWidth)
     }
@@ -100,18 +102,18 @@ class MondrianOnCanvas {
         let bareBox = box.box
         guard bareBox.topRight.x < canvasSize - 1 else { return nil }
         return basicLine(fromX: bareBox.topRight.x,
-                         fromY: bareBox.topRight.y,
+                         fromY: bareBox.topRight.y - 1,
                          toX: bareBox.bottomRight.x,
-                         toY: bareBox.bottomRight.y,
+                         toY: bareBox.bottomRight.y + 1,
                          lineWidth: lineWidth)
     }
 
     private func bottomLine(box: ColouredBox, lineWidth: Int) -> UIBezierPath? {
         let bareBox = box.box
         guard bareBox.bottomLeft.y < canvasSize - 1 else { return nil }
-        return basicLine(fromX: bareBox.bottomLeft.x,
+        return basicLine(fromX: bareBox.bottomLeft.x - 1,
                          fromY: bareBox.bottomLeft.y,
-                         toX: bareBox.bottomRight.x,
+                         toX: bareBox.bottomRight.x + 1,
                          toY: bareBox.bottomRight.y,
                          lineWidth: lineWidth)
     }
@@ -120,9 +122,9 @@ class MondrianOnCanvas {
         let bareBox = box.box
         guard bareBox.topLeft.x > 0 else { return nil }
         return basicLine(fromX: bareBox.topLeft.x,
-                         fromY: bareBox.topLeft.y,
+                         fromY: bareBox.topLeft.y - 1,
                          toX: bareBox.bottomLeft.x,
-                         toY: bareBox.bottomLeft.y,
+                         toY: bareBox.bottomLeft.y + 1,
                          lineWidth: lineWidth)
     }
 }
