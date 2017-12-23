@@ -1,5 +1,6 @@
 *.DS_Store
 project.xcworkspace/
+*.xcodeproj/
 
 ## Various settings
 *.pbxuser
