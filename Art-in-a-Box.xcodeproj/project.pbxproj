@@ -12,7 +12,22 @@
 		4C3C8E601FE7FD9C00361C1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3C8E5E1FE7FD9C00361C1D /* Main.storyboard */; };
 		4C3C8E621FE7FD9C00361C1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C3C8E611FE7FD9C00361C1D /* Assets.xcassets */; };
 		4C3C8E651FE7FD9C00361C1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3C8E631FE7FD9C00361C1D /* LaunchScreen.storyboard */; };
+		4C3C8E6D1FE7FEBA00361C1D /* MondrianPaintingElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3C8E6C1FE7FEBA00361C1D /* MondrianPaintingElements.swift */; };
+		4C3C8E6F1FE8044800361C1D /* Mondrian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3C8E6E1FE8044800361C1D /* Mondrian.swift */; };
+		4C896DCE1FEACB4000D06416 /* Art_in_a_BoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C896DCD1FEACB4000D06416 /* Art_in_a_BoxTests.swift */; };
+		4C8B81C61FED8A6A008B4D8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C8B81C81FED8A6A008B4D8E /* InfoPlist.strings */; };
+		4C991F5F1FED3DF500DBFFD9 /* MondrianToImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C991F5E1FED3DF500DBFFD9 /* MondrianToImage.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C896DD01FEACB4000D06416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C3C8E4F1FE7FD9C00361C1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C3C8E561FE7FD9C00361C1D;
+			remoteInfo = "Art-in-a-Box";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4C3C8E571FE7FD9C00361C1D /* Art-in-a-Box.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Art-in-a-Box.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +37,28 @@
 		4C3C8E611FE7FD9C00361C1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C3C8E641FE7FD9C00361C1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C3C8E661FE7FD9C00361C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C3C8E6C1FE7FEBA00361C1D /* MondrianPaintingElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MondrianPaintingElements.swift; sourceTree = "<group>"; };
+		4C3C8E6E1FE8044800361C1D /* Mondrian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mondrian.swift; sourceTree = "<group>"; };
+		4C739D491FEDAE0500500B4F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		4C739D4A1FEDAE0500500B4F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		4C739D4B1FEDAE0500500B4F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C896DCB1FEACB4000D06416 /* Art-in-a-BoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Art-in-a-BoxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C896DCD1FEACB4000D06416 /* Art_in_a_BoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Art_in_a_BoxTests.swift; sourceTree = "<group>"; };
+		4C896DCF1FEACB4000D06416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C8B81C71FED8A6A008B4D8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C8B81C91FED8ABF008B4D8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C991F5E1FED3DF500DBFFD9 /* MondrianToImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MondrianToImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4C3C8E541FE7FD9C00361C1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C896DC81FEACB4000D06416 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				4C3C8E591FE7FD9C00361C1D /* Art-in-a-Box */,
+				4C896DCC1FEACB4000D06416 /* Art-in-a-BoxTests */,
 				4C3C8E581FE7FD9C00361C1D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				4C3C8E571FE7FD9C00361C1D /* Art-in-a-Box.app */,
+				4C896DCB1FEACB4000D06416 /* Art-in-a-BoxTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,11 +92,24 @@
 				4C3C8E5A1FE7FD9C00361C1D /* AppDelegate.swift */,
 				4C3C8E5C1FE7FD9C00361C1D /* ViewController.swift */,
 				4C3C8E5E1FE7FD9C00361C1D /* Main.storyboard */,
+				4C991F5E1FED3DF500DBFFD9 /* MondrianToImage.swift */,
 				4C3C8E611FE7FD9C00361C1D /* Assets.xcassets */,
 				4C3C8E631FE7FD9C00361C1D /* LaunchScreen.storyboard */,
 				4C3C8E661FE7FD9C00361C1D /* Info.plist */,
+				4C8B81C81FED8A6A008B4D8E /* InfoPlist.strings */,
+				4C3C8E6C1FE7FEBA00361C1D /* MondrianPaintingElements.swift */,
+				4C3C8E6E1FE8044800361C1D /* Mondrian.swift */,
 			);
 			path = "Art-in-a-Box";
+			sourceTree = "<group>";
+		};
+		4C896DCC1FEACB4000D06416 /* Art-in-a-BoxTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C896DCD1FEACB4000D06416 /* Art_in_a_BoxTests.swift */,
+				4C896DCF1FEACB4000D06416 /* Info.plist */,
+			);
+			path = "Art-in-a-BoxTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +132,24 @@
 			productReference = 4C3C8E571FE7FD9C00361C1D /* Art-in-a-Box.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4C896DCA1FEACB4000D06416 /* Art-in-a-BoxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C896DD21FEACB4000D06416 /* Build configuration list for PBXNativeTarget "Art-in-a-BoxTests" */;
+			buildPhases = (
+				4C896DC71FEACB4000D06416 /* Sources */,
+				4C896DC81FEACB4000D06416 /* Frameworks */,
+				4C896DC91FEACB4000D06416 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C896DD11FEACB4000D06416 /* PBXTargetDependency */,
+			);
+			name = "Art-in-a-BoxTests";
+			productName = "Art-in-a-BoxTests";
+			productReference = 4C896DCB1FEACB4000D06416 /* Art-in-a-BoxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +164,11 @@
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
+					4C896DCA1FEACB4000D06416 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4C3C8E561FE7FD9C00361C1D;
+					};
 				};
 			};
 			buildConfigurationList = 4C3C8E521FE7FD9C00361C1D /* Build configuration list for PBXProject "Art-in-a-Box" */;
@@ -107,6 +178,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 4C3C8E4E1FE7FD9C00361C1D;
 			productRefGroup = 4C3C8E581FE7FD9C00361C1D /* Products */;
@@ -114,6 +186,7 @@
 			projectRoot = "";
 			targets = (
 				4C3C8E561FE7FD9C00361C1D /* Art-in-a-Box */,
+				4C896DCA1FEACB4000D06416 /* Art-in-a-BoxTests */,
 			);
 		};
 /* End PBXProject section */
@@ -124,8 +197,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C3C8E651FE7FD9C00361C1D /* LaunchScreen.storyboard in Resources */,
+				4C8B81C61FED8A6A008B4D8E /* InfoPlist.strings in Resources */,
 				4C3C8E621FE7FD9C00361C1D /* Assets.xcassets in Resources */,
 				4C3C8E601FE7FD9C00361C1D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C896DC91FEACB4000D06416 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,18 +217,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C3C8E6D1FE7FEBA00361C1D /* MondrianPaintingElements.swift in Sources */,
+				4C991F5F1FED3DF500DBFFD9 /* MondrianToImage.swift in Sources */,
+				4C3C8E6F1FE8044800361C1D /* Mondrian.swift in Sources */,
 				4C3C8E5D1FE7FD9C00361C1D /* ViewController.swift in Sources */,
 				4C3C8E5B1FE7FD9C00361C1D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4C896DC71FEACB4000D06416 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C896DCE1FEACB4000D06416 /* Art_in_a_BoxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C896DD11FEACB4000D06416 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C3C8E561FE7FD9C00361C1D /* Art-in-a-Box */;
+			targetProxy = 4C896DD01FEACB4000D06416 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4C3C8E5E1FE7FD9C00361C1D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4C3C8E5F1FE7FD9C00361C1D /* Base */,
+				4C739D491FEDAE0500500B4F /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -156,8 +257,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				4C3C8E641FE7FD9C00361C1D /* Base */,
+				4C739D4A1FEDAE0500500B4F /* de */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4C8B81C81FED8A6A008B4D8E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C8B81C71FED8A6A008B4D8E /* en */,
+				4C8B81C91FED8ABF008B4D8E /* Base */,
+				4C739D4B1FEDAE0500500B4F /* de */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -167,6 +279,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -224,6 +337,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -300,6 +414,38 @@
 			};
 			name = Release;
 		};
+		4C896DD31FEACB4000D06416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MV5V4GFCQ7;
+				INFOPLIST_FILE = "Art-in-a-BoxTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.kuehweg.Art-in-a-BoxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Art-in-a-Box.app/Art-in-a-Box";
+			};
+			name = Debug;
+		};
+		4C896DD41FEACB4000D06416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MV5V4GFCQ7;
+				INFOPLIST_FILE = "Art-in-a-BoxTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.kuehweg.Art-in-a-BoxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Art-in-a-Box.app/Art-in-a-Box";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -317,6 +463,15 @@
 			buildConfigurations = (
 				4C3C8E6A1FE7FD9C00361C1D /* Debug */,
 				4C3C8E6B1FE7FD9C00361C1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C896DD21FEACB4000D06416 /* Build configuration list for PBXNativeTarget "Art-in-a-BoxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C896DD31FEACB4000D06416 /* Debug */,
+				4C896DD41FEACB4000D06416 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

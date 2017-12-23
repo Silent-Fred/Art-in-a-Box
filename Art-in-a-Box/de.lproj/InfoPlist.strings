@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Art-in-a-Box
+
+  Created by Michael Kühweg on 22.12.17.
+  Copyright © 2017 Michael Kühweg. All rights reserved.
+*/
+
+NSPhotoLibraryAddUsageDescription = "Der Zugriff auf das Fotoalbum wird benötigt, um dort Zufallsbilder speichern zu können.";

@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Art-in-a-Box
+
+  Created by Michael Kühweg on 22.12.17.
+  Copyright © 2017 Michael Kühweg. All rights reserved.
+*/
+
+NSPhotoLibraryAddUsageDescription = "This is needed to be able to save your random art in the photo album.";
