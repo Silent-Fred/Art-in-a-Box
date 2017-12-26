@@ -52,7 +52,11 @@ class ViewController: UIViewController {
                           completion: nil)
     }
     
-    @IBAction func shareImage(_ sender: UIBarButtonItem) {
+    @IBAction func shareImage(_ sender: Any) {
+        shareCurrentMondrian()
+    }
+    
+    private func shareCurrentMondrian() {
         let imageToShare = [ mondrianImageView.image! ]
         let activityViewController = UIActivityViewController(activityItems: imageToShare, applicationActivities: nil)
         // according to stackoverflow, the following is required so that iPads won't crash

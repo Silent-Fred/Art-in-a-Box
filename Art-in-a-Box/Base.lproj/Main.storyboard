@@ -27,6 +27,7 @@
                                     <outletCollection property="gestureRecognizers" destination="Gg1-Um-6ND" appends="YES" id="IoM-DS-X7q"/>
                                     <outletCollection property="gestureRecognizers" destination="jiV-Vz-JQZ" appends="YES" id="xY5-cE-SLC"/>
                                     <outletCollection property="gestureRecognizers" destination="FV7-xG-5g0" appends="YES" id="gXD-ag-44e"/>
+                                    <outletCollection property="gestureRecognizers" destination="XvK-RE-01s" appends="YES" id="Vwq-7r-8ED"/>
                                 </connections>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hYv-LZ-ALr">
@@ -35,7 +36,7 @@
                                 <items>
                                     <barButtonItem systemItem="action" id="xCb-5o-bMv">
                                         <connections>
-                                            <action selector="shareImage:" destination="BYZ-38-t0r" id="1kQ-NT-ZFk"/>
+                                            <action selector="shareImage:" destination="BYZ-38-t0r" id="FAB-Np-dTc"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="yll-7I-dO1"/>
@@ -70,6 +71,11 @@
                         <action selector="tapOnImage:" destination="BYZ-38-t0r" id="kKD-48-0Ba"/>
                     </connections>
                 </tapGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="XvK-RE-01s">
+                    <connections>
+                        <action selector="shareImage:" destination="BYZ-38-t0r" id="0dW-A7-wqT"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
