@@ -15,10 +15,13 @@ struct Point {
 
 // MondrianBoxes have no rotation. That makes things a lot easier ;-)
 struct MondrianBox {
+
     let topLeft: Point
     let bottomRight: Point
+
     var topRight: Point { return Point(x: bottomRight.x, y: topLeft.y) }
     var bottomLeft: Point { return Point(x: topLeft.x, y: bottomRight.y) }
+
     // width and height are defined as the difference between start and end point,
     // ignoring the spatial extent of the points
     var width: Int { return bottomRight.x - topLeft.x }
@@ -36,22 +39,31 @@ struct MondrianBox {
     }
     
     public func splitAlongVerticalLineAt(x: Int) -> [MondrianBox] {
+
         guard x > topLeft.x && x <= bottomRight.x else { return [self] }
-        let leftBox = MondrianBox(topLeft: topLeft, bottomRight: Point(x: x - 1, y: bottomRight.y))
-        let rightBox = MondrianBox(topLeft: Point(x: x, y: topLeft.y), bottomRight: bottomRight)
+
+        let leftBox = MondrianBox(topLeft: topLeft,
+                                  bottomRight: Point(x: x - 1, y: bottomRight.y))
+        let rightBox = MondrianBox(topLeft: Point(x: x, y: topLeft.y),
+                                   bottomRight: bottomRight)
         return [leftBox, rightBox]
     }
 
     public func splitAlongHorizontalLineAt(y: Int) -> [MondrianBox] {
+
         guard y > topLeft.y && y <= bottomRight.y else { return [self] }
-        let upperBox = MondrianBox(topLeft: topLeft, bottomRight: Point(x: topRight.x, y: y - 1))
-        let lowerBox = MondrianBox(topLeft: Point(x: topLeft.x, y: y), bottomRight: bottomRight)
+
+        let upperBox = MondrianBox(topLeft: topLeft,
+                                   bottomRight: Point(x: topRight.x, y: y - 1))
+        let lowerBox = MondrianBox(topLeft: Point(x: topLeft.x, y: y),
+                                   bottomRight: bottomRight)
         return [upperBox, lowerBox]
     }
 }
 
 // Only a very limited palette is used for our art
 enum MondrianColour {
+
     case red
     case yellow
     case blue

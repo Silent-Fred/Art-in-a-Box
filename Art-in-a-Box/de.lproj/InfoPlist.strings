@@ -6,4 +6,4 @@
   Copyright © 2017 Michael Kühweg. All rights reserved.
 */
 
-NSPhotoLibraryAddUsageDescription = "Der Zugriff auf das Fotoalbum wird benötigt, um dort Zufallsbilder speichern zu können.";
+NSPhotoLibraryAddUsageDescription = "Zufallsbilder können im Fotoalbum gespeichert werden, wenn der Zugriff darauf gestattet wird.";

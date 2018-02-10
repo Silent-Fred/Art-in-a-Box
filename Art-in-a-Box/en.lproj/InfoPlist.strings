@@ -6,4 +6,4 @@
   Copyright © 2017 Michael Kühweg. All rights reserved.
 */
 
-NSPhotoLibraryAddUsageDescription = "This is needed to be able to save your random art in the photo album.";
+NSPhotoLibraryAddUsageDescription = "You can save your random art in the photo album if you allow the app to do so.";
